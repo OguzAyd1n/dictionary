@@ -1,0 +1,30 @@
+public class Word {
+    private String text;
+    private PartOfSpeech pos;
+
+    public Word(String text, PartOfSpeech pos) {
+        this.text = text;
+        this.pos = pos;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public PartOfSpeech getPos() {
+        return pos;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public void setPos(PartOfSpeech pos) {
+        this.pos = pos;
+    }
+
+    @Override
+    public String toString() {
+        return text + "/" + pos.toString();
+    }
+}
